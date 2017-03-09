@@ -8,18 +8,17 @@
 
 import UIKit
 
-public class MediumMenuItem: NSObject {
-    public var title: String?
-    public var completion: completionHandler?
-    public var menuButton: UIButton?
+open class MediumMenuItem {
+    open var title: String?
+    open var image: UIImage?
+    open var completion: (() -> Void)?
+
+    init() {}
     
-    override public init() {
-        super.init()
-    }
-    
-    public convenience init(menuItemWithTitle title: String, withCompletionHandler completion: completionHandler) {
+    public convenience init(title: String, image:UIImage? = nil, completion: (() -> Void)? = nil) {
         self.init()
         self.title = title
+        self.image = image
         self.completion = completion
     }
 }

@@ -2,11 +2,10 @@
 //  MediumMenu_SampleTests.swift
 //  MediumMenu-SampleTests
 //
-//  Created by pixyzehn on 2/8/15.
-//  Copyright (c) 2015 pixyzehn. All rights reserved.
+//  Created by pixyzehn on 10/1/16.
+//  Copyright © 2016 pixyzehn. All rights reserved.
 //
 
-import UIKit
 import XCTest
 
 class MediumMenu_SampleTests: XCTestCase {
@@ -23,12 +22,12 @@ class MediumMenu_SampleTests: XCTestCase {
     
     func testExample() {
         // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock() {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
     }
